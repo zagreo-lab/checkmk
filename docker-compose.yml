@@ -21,7 +21,7 @@ services:
       - TZ=Europe/Rome
       #- MAIL_RELAY_HOST=mailrelay.example.com
       - CMK_SITE_ID=cmk
-      - CMK_PASSWORD='${CHECKMK_PASSWORD:-XXX}'
+      - CMK_PASSWORD=${CHECKMK_PASSWORD:-XXX}
       - CMK_LIVESTATUS_TCP=on
     tmpfs:
       - /opt/omd/sites/cmk/tmp:uid=1000,gid=1000
