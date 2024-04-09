@@ -1,5 +1,7 @@
+##
 # docker-compose.yml
-
+#
+##
 version: '3.6'
 
 services:
@@ -16,8 +18,4 @@ services:
     ports:
       - "8080:5000"
     restart: unless-stopped
-    networks:
-      checkmk_network:
 
-networks:
-    checkmk_network:
