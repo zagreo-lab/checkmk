@@ -19,14 +19,14 @@ services:
     restart: unless-stopped
     environment:
       - TZ=Europe/Rome
-      - MAIL_RELAY_HOST=mailrelay.example.com
+      #- MAIL_RELAY_HOST=mailrelay.example.com
       - CMK_SITE_ID=cmkadmin
       - CMK_PASSWORD='${CHECKMK_PASSWORD:-XXX}'
       - CMK_LIVESTATUS_TCP=on
     tmpfs:
       - /opt/omd/sites/cmk/tmp:uid=1000,gid=1000
-    ulimits:
-      nofile: 1024
+    #ulimits:
+    #  nofile: 1024
     volumes:
       - checkmk:/omd/sites
       - /etc/localtime:/etc/localtime:ro
