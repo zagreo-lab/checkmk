@@ -20,7 +20,7 @@ services:
     environment:
       - TZ=Europe/Rome
       - MAIL_RELAY_HOST=mailrelay.example.com
-      - CMK_SITE_ID=admin
+      - CMK_SITE_ID=cmkadmin
       - CMK_PASSWORD='${CHECKMK_PASSWORD:-XXX}'
       - CMK_LIVESTATUS_TCP=on
     tmpfs:
