@@ -15,7 +15,7 @@ services:
       #- "514:514/tcp"
       - '6557:6557/tcp'
       #- '8000:8000'
-      - '${CHECKMK_PORT:-8787}:5000/tcp'
+      - '${CHECKMK_PORT:-8080}:5000/tcp'
     restart: unless-stopped
     environment:
       - TZ=Europe/Rome
