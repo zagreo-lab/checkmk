@@ -13,7 +13,7 @@ Created new site cmk with version 2.2.0p1.cre.
   After logging in, you can change the password for cmkadmin with 'cmk-passwd cmkadmin'.
 
 # Backup
-Il backup target è: 
+Il backup target è (dopo aver creato nel Docker Volume la dir: backup, con accesso a tutti): 
   
 Directory to save the backup to: 	/opt/omd/sites/cmk/backup
 
