@@ -11,3 +11,10 @@ Created new site cmk with version 2.2.0p1.cre.
   The admin user for the web applications is cmkadmin with password: 2JLysBmv
   For command line administration of the site, log in with 'omd su cmk'.
   After logging in, you can change the password for cmkadmin with 'cmk-passwd cmkadmin'.
+
+# Backup
+Il backup target è: 
+  
+Directory to save the backup to: 	/opt/omd/sites/cmk/backup
+
+Mountpoint: 	off
